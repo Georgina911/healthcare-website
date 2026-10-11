@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitalis Health | The 3 Pillars of Well-Being</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563EB',   /* Clean Blue */
+                        tealAccent: '#0D9488',/* Calming Teal */
+                        coralAccent: '#F97316',/* Warm Coral */
+                        neutralGray: '#F3F4F6',/* Soft Gray */
+                        darkSlate: '#1F2937'   /* Charcoal */
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-neutralGray text-darkSlate font-sans antialiased">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-bold text-primary">Vitalis<span class="text-tealAccent">Health</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#pillars" class="hover:text-primary transition">The Pillars</a>
+                <a href="#interactive-tool" class="hover:text-primary transition">Sleep Calculator</a>
+                <a href="#schedule" class="hover:text-primary transition">Fitness Planner</a>
+                <a href="#resources" class="hover:text-primary transition">Resources</a>
+            </nav>
+            <div>
+                <a href="#resources" class="bg-primary text-white px-5 py-2.5 rounded-xl font-medium shadow-md hover:bg-blue-700 transition">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-blue-50 via-white to-teal-50 py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <span class="bg-blue-100 text-primary text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Preventive Wellness Guide</span>
+            <h1 class="mt-6 text-4xl lg:text-6xl font-extrabold tracking-tight text-darkSlate">
+                Invest in Your Health: <br><span class="text-primary">The 3 Pillars of Well-Being</span>
+            </h1>
+            <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-600">
+                Master the core fundamentals of long-term vitality through restorative sleep, targeted physical activity, and proactive preventive care.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#pillars" class="bg-primary text-white font-medium px-8 py-3.5 rounded-xl shadow-lg hover:bg-blue-700 transition">Explore the Pillars</a>
+                <a href="#interactive-tool" class="bg-white border border-gray-300 text-darkSlate font-medium px-8 py-3.5 rounded-xl shadow-sm hover:bg-gray-50 transition">Try Sleep Calculator</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 3 Pillars Section -->
+    <section id="pillars" class="py-20 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold tracking-tight">The Three Foundations</h2>
+            <p class="text-gray-600 mt-2">Interconnected habits designed for sustained mental and physical resilience.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Pillar 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-tealAccent">
+                <div class="w-12 h-12 bg-teal-50 text-tealAccent rounded-xl flex items-center justify-center font-bold text-xl mb-6">🌙</div>
+                <h3 class="text-xl font-bold mb-3">1. Quality Sleep</h3>
+                <p class="text-gray-600 text-sm mb-4">Restores neural pathways, clears cellular waste, and balances metabolic hormones. Adults require 7–9 hours nightly.</p>
+                <ul class="text-xs text-gray-500 space-y-2 border-t pt-4">
+                    <li>• Light sleep: Memory consolidation</li>
+                    <li>• Deep sleep: Physical tissue repair</li>
+                    <li>• REM: Emotional regulation</li>
+                </ul>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-coralAccent">
+                <div class="w-12 h-12 bg-orange-50 text-coralAccent rounded-xl flex items-center justify-center font-bold text-xl mb-6">⚡</div>
+                <h3 class="text-xl font-bold mb-3">2. Regular Exercise</h3>
+                <p class="text-gray-600 text-sm mb-4">Builds cardiovascular strength, releases mood-boosting neurotransmitters, and prevents musculoskeletal decline.</p>
+                <ul class="text-xs text-gray-500 space-y-2 border-t pt-4">
+                    <li>• Target: 150+ mins aerobic weekly</li>
+                    <li>• 2x weekly strength sessions</li>
+                    <li>• Lowers risk of metabolic syndrome</li>
+                </ul>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-primary">
+                <div class="w-12 h-12 bg-blue-50 text-primary rounded-xl flex items-center justify-center font-bold text-xl mb-6">🩺</div>
+                <h3 class="text-xl font-bold mb-3">3. Medical Check-Ups</h3>
+                <p class="text-gray-600 text-sm mb-4">Shifts focus from reactive treatment to early detection of silent conditions like hypertension or elevated glucose.</p>
+                <ul class="text-xs text-gray-500 space-y-2 border-t pt-4">
+                    <li>• Annual physical exam & blood panels</li>
+                    <li>• Blood pressure monitoring</li>
+                    <li>• Personalized preventive care</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Tool Section (Sleep Calculator) -->
+    <section id="interactive-tool" class="bg-white py-20 border-y border-gray-200">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold tracking-tight">Interactive Sleep Cycle Calculator</h2>
+            <p class="text-gray-600 mt-2 mb-8">Waking up in the middle of a sleep cycle causes grogginess. Calculate ideal bedtimes based on 90-minute sleep cycles.</p>
+            
+            <div class="bg-neutralGray p-8 rounded-2xl max-w-lg mx-auto shadow-inner">
+                <label for="wakeup-time" class="block text-sm font-medium text-gray-700 mb-2">What time do you need to wake up?</label>
+                <input type="time" id="wakeup-time" value="07:00" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:outline-none mb-4 text-center text-lg font-semibold">
+                <button onclick="calculateSleep()" class="w-full bg-primary text-white font-medium py-3 rounded-xl hover:bg-blue-700 transition shadow-md">Calculate Bedtimes</button>
+                
+                <div id="result-box" class="mt-6 hidden text-left bg-white p-4 rounded-xl shadow-sm">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">To wake up refreshed, try falling asleep at:</p>
+                    <ul id="sleep-times" class="space-y-1 font-medium text-darkSlate"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekly Fitness Schedule Table -->
+    <section id="schedule" class="py-20 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold tracking-tight">Sample Weekly Movement Planner</h2>
+            <p class="text-gray-600 mt-2">A balanced approach combining cardio, strength, and active recovery.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-200">
+            <table class="w-full text-left border-collapse">
+                <thead class="bg-neutralGray text-gray-700 text-xs uppercase tracking-wider">
+                    <tr>
+                        <th class="p-4 sm:p-6">Day</th>
+                        <th class="p-4 sm:p-6">Target Activity</th>
+                        <th class="p-4 sm:p-6">Focus Area</th>
+                        <th class="p-4 sm:p-6">Duration</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200 text-sm">
+                    <tr>
+                        <td class="p-4 sm:p-6 font-semibold">Monday</td>
+                        <td class="p-4 sm:p-6 text-gray-600">Moderate Aerobic (Brisk Walk / Cycling)</td>
+                        <td class="p-4 sm:p-6 text-tealAccent font-medium">Cardiovascular Endurance</td>
+                        <td class="p-4 sm:p-6 text-gray-600">30 Minutes</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="p-4 sm:p-6 font-semibold">Tuesday</td>
+                        <td class="p-4 sm:p-6 text-gray-600">Full-Body Strength Training</td>
+                        <td class="p-4 sm:p-6 text-coralAccent font-medium">Major Muscle Groups</td>
+                        <td class="p-4 sm:p-6 text-gray-600">45 Minutes</td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 sm:p-6 font-semibold">Wednesday</td>
+                        <td class="p-4 sm:p-6 text-gray-600">Active Recovery & Mobility Work</td>
+                        <td class="p-4 sm:p-6 text-tealAccent font-medium">Flexibility & Joint Health</td>
+                        <td class="p-4 sm:p-6 text-gray-600">20 Minutes</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="p-4 sm:p-6 font-semibold">Thursday</td>
+                        <td class="p-4 sm:p-6 text-gray-600">Moderate Aerobic (Swimming / Incline Walk)</td>
+                        <td class="p-4 sm:p-6 text-tealAccent font-medium">Lung Capacity</td>
+                        <td class="p-4 sm:p-6 text-gray-600">30 Minutes</td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 sm:p-6 font-semibold">Friday</td>
+                        <td class="p-4 sm:p-6 text-gray-600">Full-Body Strength Training</td>
+                        <td class="p-4 sm:p-6 text-coralAccent font-medium">Compound Movements</td>
+                        <td class="p-4 sm:p-6 text-gray-600">45 Minutes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Resource Directory & Footer -->
+    <footer id="resources" class="bg-darkSlate text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+            <div>
+                <span class="text-2xl font-bold text-white">Vitalis<span class="text-tealAccent">Health</span></span>
+                <p class="text-gray-400 text-sm mt-4">Your digital companion for lifelong wellness, prevention, and evidence-based health habits.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold text-lg mb-4">Emergency & Support</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li>Emergency Services: <strong class="text-white">112</strong></li>
+                    <li>24/7 Crisis Hotline Support Available</li>
+                    <li>Verified Telehealth Consultation Portal</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-lg mb-4">Professional Standards</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li>WHO Guidelines on Physical Activity</li>
+                    <li>Sleep Foundation Sleep Hygiene Guides</li>
+                    <li>CDC Preventive Care Screening Schedules</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+            &copy; 2026 Vitalis Health Brochure Project. Designed for educational and preventive wellness demonstration.
+        </div>
+    </footer>
+
+    <!-- Simple Script for Sleep Calculator -->
+    <script>
+        function calculateSleep() {
+            const timeInput = document.getElementById('wakeup-time').value;
+            if (!timeInput) return;
+
+            const [hours, minutes] = timeInput.split(':').map(Number);
+            const wakeDate = new Date();
+            wakeDate.setHours(hours, minutes, 0, 0);
+
+            const resultBox = document.getElementById('result-box');
+            const sleepTimesList = document.getElementById('sleep-times');
+            sleepTimesList.innerHTML = '';
+
+            // 6 cycles (9 hrs), 5 cycles (7.5 hrs), 4 cycles (6 hrs)
+            const cycles = [6, 5, 4];
+            cycles.forEach(c => {
+                const sleepTime = new Date(wakeDate.getTime() - (c * 90 * 60000));
+                const timeString = sleepTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                
+                const li = document.createElement('li');
+                li.className = "py-1 border-b border-gray-100 flex justify-between";
+                li.innerHTML = `<span>${c} Sleep Cycles (${c * 1.5} hours)</span> <span class="text-primary font-bold">${timeString}</span>`;
+                sleepTimesList.appendChild(li);
+            });
+
+            resultBox.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
